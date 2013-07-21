@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>skrollr - alan does a test</title>
+
+	<link href="examples/fixed-positioning.css" rel="stylesheet" type="text/css" />
+	<link href="examples/alan.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+	<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+	<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+	
+	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
+	
+	<div id="properties" data-0="top: 0%; display: block;" data-500="top: -50%; display: block;" data-1000="top:-100%;display:none;">
+		<h2>views row 1</h2>
+		<p>width, height, padding, font-size, z-index, blah blah blah</p>
+	</div>
+	
+	<div id="properties2" data-0="top: 20%; display: block;" data-1000="top: -50%; display: block;" data-1500="top:-100%;display:none;">
+		<h2>views row 2</h2>
+		<p>width, height, padding, font-size, z-index, blah blah blah</p>
+	</div>
+	
+	<!--
+	<div class="view view-learning-journey view-id-learning_journey view-display-id-page view-dom-id-6b970cb36661037e66e6fcd2b51c9e85">
+        
+	<div class="view-content">
+		<div class="views-row views-row-1 views-row-odd views-row-first" data-0="opacity:1;top:5%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+			<div class="views-field views-field-title">        <span class="field-content"><a href="/module/module-1-understanding-your-idea">Module 1. Understanding Your Idea</a></span>  </div>  
+	  <div class="views-field views-field-body">        <div class="field-content"><p>Your Mentor will arrange a meeting to introduce you to your Peer Support Group and first module. You will be learn about service design, how to articulate your idea in simple terms, present your user journey in a visually appealing manner as well as map the stakeholders needed to make your idea really fly! At this stage, you will not consider technology. This is to ensure that technology is viewed as a practical tool to augment delivery rather than the serving as the solution in and of itself.</p>
+	</div>  </div>  </div>
+	  <div class="views-row views-row-2 views-row-even" data-0="opacity:1;top:10%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+		  
+	  <div class="views-field views-field-title">        <span class="field-content"><a href="/module/module-2-translating-and-enhancing-your-idea-using-technology">Module 2. Translating and Enhancing Your Idea Using Technology</a></span>  </div>  
+	  <div class="views-field views-field-body">        <div class="field-content"><p>You are now ready to consider how your idea could be enriched using digital technology. Supported by your Mentor, you will revisit your work from Module 1 and create a ‘Digital Service Plan’. You will learn about the range of technology platforms that could be harnessed to help you reach your target beneficiaries. You will then be supported to select the most appropriate tools for the job where your idea is concerned.</p>
+	</div>  </div>  </div>
+	  <div class="views-row views-row-3 views-row-odd">
+		  
+	  <div class="views-field views-field-title">        <span class="field-content"><a href="/module/module-3-prototyping-proving-your-concept">Module 3. Prototyping: Proving your Concept</a></span>  </div>  
+	  <div class="views-field views-field-body">        <div class="field-content"><p>This exercise will enable you to prototype your idea in practical terms. With support from tech rofessionals, you will learn how to build or adapt appropriate and low cost tools to prove your concept to stakeholders.</p>
+	</div>  </div>  </div>
+	  <div class="views-row views-row-4 views-row-even">
+		  
+	  <div class="views-field views-field-title">        <span class="field-content"><a href="/module/module-4-documenting-your-proof-concept">Module 4. Documenting Your Proof of Concept</a></span>  </div>  
+	  <div class="views-field views-field-body">        <div class="field-content"><p>Creating a proof of concept is only useful if your prototype is documented in a format that engages your stakeholders and prospective investors. This module will help you generate a succinct rich media introduction to your prototype. At the end of this exercise, we will help you gather feedback from potential funders and investors to ensure you are on the right track.</p>
+	</div>  </div>  </div>
+	  <div class="views-row views-row-5 views-row-odd">
+		  
+	  <div class="views-field views-field-title">        <span class="field-content"><a href="/module/module-5-developing-functional-specification">Module 5. Developing a Functional Specification</a></span>  </div>  
+	  <div class="views-field views-field-body">        <div class="field-content"><p>Having tested your idea, you are now ready to venture into the technical detail of working with digital technology. Working with members of the Knowledge Bank you will create a written document that can be understood by a layperson, but provide enough detail for developers with the appropriate skills to consider how to build the end solution.</p>
+	</div>  </div>  </div>
+	  <div class="views-row views-row-6 views-row-even">
+		  
+	  <div class="views-field views-field-title">        <span class="field-content"><a href="/module/module-6-business-modelling">Module 6. Business Modelling</a></span>  </div>  
+	  <div class="views-field views-field-body">        <div class="field-content"><p>Now that you’ve proven your idea “has legs” from a service design and technical perspective, you need to understand if and how it can generate an income to be rendered sustainable over time. “The best business plans will be so inspiring that the social investor will want to down tools and join the enterprise in changing the world. Get it right and not only will you secure an investor, you’ll secure a partner” says Annika Small, CEO at Nominet Trust.</p>
+	<p>This exercise will help you collate the outputs from previous modules and represent them in the form of a resilient proposition for investors. The document that you will be supported to produce will assess the potential market for your idea, including: demand, scalability, income generation models, potential competitors/partners/investors as well as any potential social return on investment.</p>
+	</div>  </div>  </div>
+	  <div class="views-row views-row-7 views-row-odd views-row-last">
+		  
+	  <div class="views-field views-field-title">        <span class="field-content"><a href="/module/module-7-seeking-tech-investment">Module 7. Seeking Tech Investment</a></span>  </div>  
+	  <div class="views-field views-field-body">        <div class="field-content"><p>All graduates of the Learning Programme will receive advice and guidance from their Mentors about how to progress their idea with funders and investors (as may be required). But, if you develop a particularly strong idea, you will be invited to pitch your prototype and outline business plan to Our Digital Community partners with a view to securing onward investment.</p>
+	</div>  </div>  </div>
+		</div>
+	  
+	</div>
+	
+	-->
+
+	<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
+
+	<script type="text/javascript" src="dist/skrollr.min.js"></script>
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="dist/skrollr.ie.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
+</body>
+
+</html>
